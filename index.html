@@ -1,0 +1,60 @@
+<!--
+Copyright 2017 The AplaProject Authors
+This file is part of the AplaProject library.
+
+The AplaProject library is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+The AplaProject library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with the AplaProject library. If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Apla Key Generator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="./images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+    <link href="./styles/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div>
+                <img class="logo" src="./images/logo.svg" />
+            </div>
+            <p class="title">Public blockchain platform for building digital ecosystems</p>
+            <p class="subtitle">Create an ecosystem for developing and running blockchain applications in one click.</p>
+        </div>
+    </header>
+    <div class="content wrapper">
+        <div class="heading">Seed</div>
+        <textarea class="result seed" readonly="readonly" id="seed"></textarea>
+
+        <div class="key">
+            <div class="heading">Public key</div>
+            <textarea class="result key" readonly="readonly" id="key"></textarea>
+        </div>
+
+        <div>
+            <button id="generate" class="button primary">Generate</button>
+            <button id="download" class="button secondary">Download</button>
+        </div>
+    </div>
+
+    <script src="./scripts/jsrsasign-all-min.js"></script>
+    <script src="./scripts/random-js.js"></script>
+    <script src="./scripts/apla.js"></script>
+</body>
+
+</html>
